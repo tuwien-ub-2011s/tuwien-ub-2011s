@@ -1,0 +1,103 @@
+ident recfibo
+(
+ident n
+)
+=
+cond
+ident n
+=
+num 0
+->
+num 0
+;
+ident n
+=
+num 1
+->
+num 1
+;
+->
+ident recfibo
+(
+ident n
++
+(
+-
+num 1
+)
+)
++
+ident recfibo
+(
+ident n
++
+(
+-
+num 2
+)
+)
+end
+;
+ident doiterfibo
+(
+ident n
+,
+ident i
+,
+ident a
+,
+ident b
+)
+=
+cond
+ident n
+=
+num 0
+->
+num 0
+;
+ident n
+=
+num 1
+->
+num 1
+;
+ident n
+=
+ident i
+->
+ident a
+;
+->
+ident doiterfibo
+(
+ident n
+,
+ident i
++
+num 1
+,
+ident b
+,
+ident a
++
+ident b
+)
+end
+;
+ident iterfibo
+(
+ident n
+)
+=
+ident doiterfibo
+(
+ident n
+,
+num 0
+,
+num 0
+,
+num 1
+)
+;

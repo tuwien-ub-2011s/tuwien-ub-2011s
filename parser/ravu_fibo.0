@@ -1,0 +1,14 @@
+recfibo(n) = cond
+	n=0	-> 0;
+	n=1	-> 1;
+		-> recfibo(n + (-1)) + recfibo(n + (-2))
+	end;
+
+doiterfibo(n, i, a, b) = cond
+	n=0	-> 0;
+	n=1	-> 1;
+	n=i	-> a;
+		-> doiterfibo(n, i + 1, b, a + b)
+	end;
+
+iterfibo(n) = doiterfibo(n, 0, 0, 1);
