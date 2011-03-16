@@ -1,0 +1,15 @@
+ident liste3
+(
+ident a
+,
+ident b
+,
+ident c
+)
+=
+ident a
+.
+ident b
+.
+ident c
+;

@@ -1,0 +1,10 @@
+ident f
+(
+ident a
+,
+ident b
+)
+=
+ident a
+ident b
+;
