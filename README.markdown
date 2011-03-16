@@ -42,7 +42,7 @@ Damit es zu keinen Konflikten zwischen gleich benannten Dateien kommt, soll vor 
         $ git commit -m "ein paar Scanner-Testfaelle"
         $ git push
 
-Alternativ kannst du diese Repository auch forken und Push-Requests aufmachen.
+Alternativ kannst du diese Repository auch forken und Pull-Requests aufmachen.
 
 ### mit git aber ohne Github-Account
 
