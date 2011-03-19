@@ -1,0 +1,34 @@
+ident for
+(
+ident i
+=
+num 0
+;
+ident i
+>
+num 10
+;
+ident i
++
++
+)
+(
+ident if
+(
+ident i
+=
+=
+num 3
+or
+ident i
+=
+=
+num 5
+)
+ident a
+~
+=
+ident b
+;
+)
+end

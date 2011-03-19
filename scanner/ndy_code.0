@@ -1,0 +1,5 @@
+for (i=0;i>10;i++)
+(	if(i==3 or i==5) // if counter = 3
+		a ~= b;
+)
+end
