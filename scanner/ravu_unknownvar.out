@@ -1,0 +1,9 @@
+ident f
+(
+ident a
+)
+=
+ident b
++
+num 2
+;
