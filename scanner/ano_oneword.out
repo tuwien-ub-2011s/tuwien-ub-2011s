@@ -1,0 +1,16 @@
+cond
+*
+num 3
+~
+->
+ident ident
+.
+ident ident
+_
+ident ident
+(
+ident iorj
+)
+-
+num 4
+end
