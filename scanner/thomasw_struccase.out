@@ -1,0 +1,23 @@
+ident length
+(
+ident s
+)
+=
+cond
+ident s
+~
+_
+.
+ident rest
+->
+num 1
++
+ident length
+(
+ident rest
+)
+;
+->
+num 1
+end
+;

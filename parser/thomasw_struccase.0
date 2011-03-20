@@ -1,0 +1,4 @@
+length (s) = cond
+	s ~ _ . rest	-> 1 + length(rest);
+			-> 1
+end;

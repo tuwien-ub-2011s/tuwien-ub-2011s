@@ -1,0 +1,18 @@
+ident f
+(
+ident a
+)
+=
+cond
+ident a
+~
+ident a
+.
+ident rest
+->
+ident a
+;
+->
+num 0
+end
+;

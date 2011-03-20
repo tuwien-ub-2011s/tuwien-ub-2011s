@@ -1,0 +1,4 @@
+f(a) = cond
+	a ~ a . rest	-> a;
+			-> 0
+end;
