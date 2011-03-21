@@ -1,0 +1,18 @@
+
+gcd(a,b) = cond
+	   b = 0 -> a;
+	   -> gcd(b, a + ((-b) * div(a,b))) end;
+
+gcd2(a,b) = cond
+	    b = 0 -> a;
+	    -> gcd(b, mod(a,b)) end;
+
+mod(n,d) = cond
+	   n > d -> mod(n + (-d), d);
+	   -> n end;
+
+// Division is not supported by our language, so we have to help ourselves with
+// this O(n) function. I guess this could be done more efficiently.
+div(n,d) = cond
+	   n > d -> 1 + gcd(n + (-d), d);
+	   -> 0 end;

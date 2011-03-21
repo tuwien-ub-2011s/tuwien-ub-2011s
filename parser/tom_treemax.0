@@ -1,0 +1,10 @@
+
+treemax(tree) = cond
+		tree ~ a.b -> max(treemax(a), treemax(b));
+		-> tree // tree is an integer leaf
+		end;
+
+max(a,b) = cond
+	   a > b -> a;
+	   -> b
+	   end;	  
