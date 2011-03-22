@@ -7,9 +7,11 @@ ident b
 ident c
 )
 =
+(
 ident a
 +
 ident b
+)
 *
 ident c
 ;
@@ -23,8 +25,10 @@ ident c
 )
 =
 ident a
-*
-ident b
 +
+(
+ident b
+*
 ident c
+)
 ;
