@@ -1,0 +1,30 @@
+ident addmul
+(
+ident a
+,
+ident b
+,
+ident c
+)
+=
+ident a
++
+ident b
+*
+ident c
+;
+ident muladd
+(
+ident a
+,
+ident b
+,
+ident c
+)
+=
+ident a
+*
+ident b
++
+ident c
+;

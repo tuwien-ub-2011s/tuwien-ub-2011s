@@ -1,0 +1,3 @@
+addmul(a, b, c) = a + b * c;
+
+muladd(a, b, c) = a * b + c;
