@@ -1,0 +1,15 @@
+ident f
+(
+ident a
+,
+ident b
+,
+ident c
+)
+=
+ident a
++
+ident b
+*
+ident c
+;
