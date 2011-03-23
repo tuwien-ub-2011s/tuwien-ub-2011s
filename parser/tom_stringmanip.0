@@ -1,0 +1,17 @@
+
+concat (s1, s2) = cond
+       	    	  s1 ~ c . cs -> c . concat(cs, s2);
+		  -> c . s2 end;
+
+length (s) = cond
+       	     s ~ _ . rest -> 1 + length(rest);
+	     -> 1 end;
+
+streq(s1, s2) = cond
+	      	s1 . s2 ~ (c1 . c1s) . (c2 . c2s) -> cond
+		     	      	       	     	     c1 = c2 -> streq (c1s, c2s);
+						     -> 0 end;
+		s1 ~ _ . _ -> 0;
+		s2 ~ _ . _ -> 0;
+		s1 = s2 -> -1;
+		-> 0 end;

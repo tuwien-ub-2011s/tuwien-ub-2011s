@@ -1,0 +1,18 @@
+num 21
+cond
+ident cond21
+num 291
+or
+ident or123H
+end
+.
+end
+num 1
+ident or1
+ident not5
+num 123
+end
+ident End
+ident Cond
+ident Or
+ident Not
