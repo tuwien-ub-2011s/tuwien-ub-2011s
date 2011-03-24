@@ -1,0 +1,3 @@
+outerclass(op1, op2) =
+	innerclass(ip1, ip2, ip3)
+;

@@ -1,0 +1,6 @@
+Func1 () =
+	cond
+		param1 -> 02aH;
+			     -> 016H
+	end
+;
