@@ -1,8 +1,0 @@
-// This one is probably a real edge case.
-// The exercise description simply says that identifiers consist of letters and 
-// digits, but doesn't really go into detail about what is meant by a 'letter'
-// This could theoretically also include all kinds of umlauts and unicode characters
-// The nature of my parser makes this easy, but I am unsure if this is the expected
-// behaviour. I guess the UBLU test-cases won't ever use anything besides [a-zA-Z] 
-// anyway.
-ÄÖÜß René Étoilé El Niño abc 無 ภาษาไทย עִבְרִית русский ελληνικά
