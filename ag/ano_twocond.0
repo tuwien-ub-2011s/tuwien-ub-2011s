@@ -1,0 +1,8 @@
+f(a, b, c) =
+		(cond
+		a=1 ~ z.next -> b;
+		-> c end)
+		=
+		(cond
+		b=1 ~ z.next -> a;
+		-> c end);

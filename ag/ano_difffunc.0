@@ -1,0 +1,6 @@
+f(a,b) = a + b;
+f(a,b) = a * b;
+f(a,b) = a or b;
+f(a,b) = a . b;
+f(a,b) = a > b;
+f(a,b) = a = b;
