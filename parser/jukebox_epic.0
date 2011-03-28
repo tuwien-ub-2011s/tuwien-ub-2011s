@@ -1,0 +1,16 @@
+foo(bar,baz,bla,undsoweiter)=(
+123 +
+
+// repeatabled Terms and different Terms (note: not semantically correct)
+(not not not 123) + (--------123) + (123 * 0abcH) + (1 * 2 * 3 * 4 * 5) + (123 or 345) +
+(bla . bar() . bar(foo) . bar(123, (1 * 2))) +
+((123 > 456) * ((((((123 = bla()))))))) +
+
+// conditions
+(cond -> 123 end) +
+(cond 123 ~ _ -> bla; -> 123 end) +
+(cond 123 -> bla; -> 123 end) +
+
+// conditions2 - Lexpr & Lterm
+(cond 123 ~ (_.bla.(bla)) . _ -> bla; -> 123 end)
+);
