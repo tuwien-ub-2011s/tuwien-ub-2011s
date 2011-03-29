@@ -1,0 +1,2 @@
+func() = cond 1 ~ a->3;->3 end;
+// hello
