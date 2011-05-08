@@ -1,0 +1,9 @@
+extern long liste3(long a, long b, long c);
+
+long l3 = liste3(2, 4, 8);
+long *l3ptr = (long *)(l3 & (~1));
+long e0 = l3ptr[0];
+long *l2 = (long *)(l3ptr[1] & (~1));
+long e1 = l2[0];
+long e2 = l2[1];
+RET(e0 == 2 && e1 == 4 && e2 == 8);
