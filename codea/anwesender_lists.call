@@ -1,0 +1,9 @@
+extern long list(long a, long b, long c, long d);
+long a = 1<<1, b = 2<<1, c = 3<<1, d = 4<<1;
+
+long *listptr = (long *) (list(a, b, c, d) & ~0x01);
+long *ptr1 = (long *) (listptr[0] & ~0x01);
+long *ptr2 = (long *) (listptr[1] & ~0x01);
+
+RET((ptr1[0] == a) && (ptr1[1] == b) && (ptr2[0] == c) && (ptr2[1] == d));
+

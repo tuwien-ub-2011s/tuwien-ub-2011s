@@ -1,0 +1,4 @@
+extern long tobeorrnottobe(long x);
+long b = 5, x = b<<1;
+RET(tobeorrnottobe(x) == ((((2*b)|~(2+b)))<<1));
+

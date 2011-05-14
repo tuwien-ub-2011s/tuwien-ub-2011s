@@ -1,0 +1,5 @@
+extern long list(long a, long b, long c, long d);
+long a = 1<<1, b = 2<<1, c = (((long) heapptr) | 1), d = 3<<1;
+list(a, b, c, d);
+RET(0 != 0);
+
