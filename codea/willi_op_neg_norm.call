@@ -1,0 +1,12 @@
+extern long neg(long a);
+extern long neg2(long a);
+extern long neg3(long a);
+
+
+RET( neg(123<<1) == (-123<<1) &&
+     neg2(123<<1) == (123<<1) &&
+     neg3(123<<1) == (-123<<1) &&
+     neg(-123<<1) == (123<<1) &&
+     neg2(-123<<1) == (-123<<1) &&
+     neg3(-123<<1) == (123<<1)
+     );

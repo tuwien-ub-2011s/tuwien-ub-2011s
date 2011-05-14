@@ -1,0 +1,12 @@
+extern long oder();
+extern long add();
+extern long neg();
+extern long invert();
+extern long mult();
+
+RET(	oder() ==  (1000<<1) &&  
+	add() ==  (1000<<1) &&  
+	neg() ==  (1000<<1) &&  
+	invert() ==  (1000<<1) &&  
+	mult() ==  (1000<<1) 
+);

@@ -1,0 +1,3 @@
+extern long bigger(long a, long b);
+
+RET( bigger( 1, (2<<1) ) == 0 );

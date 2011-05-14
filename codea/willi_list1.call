@@ -1,0 +1,19 @@
+extern long superlist();
+
+long *ptr0 = (long *) (superlist() & ~0x01);
+long *ptr1 = (long *) (ptr0[1] & ~0x01);
+long *ptr2 = (long *) (ptr1[1] & ~0x01);
+long *ptr3 = (long *) (ptr2[1] & ~0x01);
+long *ptr4 = (long *) (ptr3[1] & ~0x01);
+long *ptr5 = (long *) (ptr4[1] & ~0x01);
+long *ptr6 = (long *) (ptr5[1] & ~0x01);
+
+RET(	ptr0[0] == (1<<1) &&
+	ptr1[0] == (2<<1) &&
+	ptr2[0] == (3<<1) &&
+	ptr3[0] == (4<<1) &&
+	ptr4[0] == (5<<1) &&
+	ptr5[0] == (6<<1) &&
+	ptr6[0] == (7<<1) &&
+	ptr6[1] == (8<<1)
+);

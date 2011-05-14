@@ -1,0 +1,4 @@
+extern long func1(long a, long b, long c);
+
+RET( func1((10<<1),(20<<1),(50<<1)) == (250<<1) 
+);

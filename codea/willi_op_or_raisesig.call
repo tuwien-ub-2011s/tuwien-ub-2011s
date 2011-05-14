@@ -1,0 +1,6 @@
+extern long or1(long a);
+extern long or2(long a, long b);
+extern long or3(long a, long b, long c);
+extern long or4(long a, long b, long c, long d);
+
+RET( or4(1234<<1, 5678<<1, 9012<<1, 1) ==  0 );

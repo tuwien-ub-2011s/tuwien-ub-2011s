@@ -1,0 +1,3 @@
+invert( a ) = not a;
+invert2( a ) = not not a;
+invert3( a ) = not not not a;

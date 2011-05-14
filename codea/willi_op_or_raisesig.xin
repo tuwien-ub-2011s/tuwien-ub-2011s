@@ -1,0 +1,5 @@
+or1( a ) = a or a;
+or2( a, b ) = a or b;
+or3( a, b, c ) = a or b or c;
+or4( a, b, c, d ) = a or b or c or d;
+

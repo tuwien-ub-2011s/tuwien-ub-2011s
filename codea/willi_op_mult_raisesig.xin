@@ -1,0 +1,5 @@
+mult1( a ) = a*2;
+mult2( a, b ) = a*b;
+mult3( a, b, c ) = a*b*c;
+mult4( a, b, c, d ) = a*b*c*d;
+

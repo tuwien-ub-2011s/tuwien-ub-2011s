@@ -1,0 +1,4 @@
+extern long invert(long a);
+
+
+RET( invert(1) == 0 );

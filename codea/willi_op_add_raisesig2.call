@@ -1,0 +1,6 @@
+extern long add1(long a);
+extern long add2(long a, long b);
+extern long add3(long a, long b, long c);
+extern long add4(long a, long b, long c, long d);
+
+RET( add4(5<<1, 5<<1, 5<<1, 1 ) == 0 );

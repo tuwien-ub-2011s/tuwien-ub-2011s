@@ -1,0 +1,4 @@
+extern long neg(long a);
+
+
+RET( neg(1) == 0 );

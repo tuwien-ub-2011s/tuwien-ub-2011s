@@ -1,0 +1,12 @@
+extern long invert(long a);
+extern long invert2(long a);
+extern long invert3(long a);
+
+
+RET( invert(123<<1) == ((~123)<<1) &&
+     invert2(123<<1) == (123<<1) &&
+     invert3(123<<1) == ((~123)<<1) &&
+     invert((~123)<<1) == (123<<1) &&
+     invert2((~123)<<1) == ((~123)<<1) &&
+     invert3((~123)<<1) == (123<<1)
+     );

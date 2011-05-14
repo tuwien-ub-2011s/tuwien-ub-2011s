@@ -1,0 +1,8 @@
+extern long func1(long a, long b, long c);
+extern long funcmax(long a);
+extern long funcmin(long a);
+
+RET( func1(5<<1, 6<<1, 7<<1) == (5<<1) &&
+     funcmax( (((long)2147483647)<<1) ) == (((long)2147483647)<<1) &&
+     funcmin( (((long)-2147483648)<<1) ) == (((long)-2147483648)<<1)
+     );

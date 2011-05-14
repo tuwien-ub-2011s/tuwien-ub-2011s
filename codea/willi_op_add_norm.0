@@ -1,0 +1,5 @@
+add1( a ) = a+1;
+add2( a, b ) = a+b;
+add3( a, b, c ) = a+b+c;
+add4( a, b, c, d ) = a+b+c+d;
+

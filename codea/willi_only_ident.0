@@ -1,0 +1,5 @@
+func1( a, b, c ) = a;
+
+
+funcmax( a ) = a;
+funcmin( a ) = a;

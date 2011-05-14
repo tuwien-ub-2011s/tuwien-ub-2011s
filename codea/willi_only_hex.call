@@ -1,0 +1,8 @@
+extern long func1();
+extern long func2();
+extern long func3();
+
+RET( func1() == (45054<<1) && 
+     func2() == (16<<1) && 
+     func3() == (1<<1)
+);
