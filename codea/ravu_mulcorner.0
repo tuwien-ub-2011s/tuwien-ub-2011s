@@ -1,0 +1,3 @@
+// multiplication corner case
+// this equals 2**62 - 1, the largest positive integer
+mulcorner()	= 6442450941 * 715827883;
