@@ -1,0 +1,1 @@
+ortest(a)=a or 2;

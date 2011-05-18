@@ -1,0 +1,5 @@
+foo1()=2>3;
+foo2(a)=2>a;
+foo3(a)=a>2;             
+foo4(a,b)=a>b;
+foo5(a,b,c,d)=(a>b)>(c>d);

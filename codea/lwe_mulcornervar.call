@@ -1,0 +1,3 @@
+extern long mulcorner(long , long);
+long l = 4294967298L;
+RET(mulcorner(2147483647*2L, l) == 0x7FFFFFFFFFFFFFFE);

@@ -1,0 +1,2 @@
+extern long sum();
+RET(sum() == 48*2);

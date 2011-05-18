@@ -1,0 +1,2 @@
+extern long sum(long a);
+RET(sum(5*2) == 53*2);

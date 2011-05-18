@@ -1,0 +1,9 @@
+foo(a)= not a;
+foo2(a)= - not a;
+foo3(a)= not - a;
+foo4(a)= not - not a;
+foo5(a)= - not - a;
+foo6(a)= - - not - a;
+foo7(a)= - not not -a;
+foo8(a)= ---not not - not not --- not not not -a;
+foo9(a)= ---not not - not not --- not not not - not a;

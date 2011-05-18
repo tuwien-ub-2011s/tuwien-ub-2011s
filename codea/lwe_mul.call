@@ -1,0 +1,2 @@
+extern long mul(long , long , long );
+RET(mul(1*2, 2*2, 3*2) == 38);

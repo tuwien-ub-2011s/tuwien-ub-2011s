@@ -1,0 +1,6 @@
+extern foo1();
+extern foo2(long a);
+extern foo3(long a);            
+extern foo4(long a,long b);
+extern foo5(long a,long b,long c,long d);
+RET(foo1()==0 && foo2(2*2)==-2 && foo3(2*2)==-2 && foo4(2*2,3*2)==0 && foo5(1*2,1*2,1*2,1*2)==-2 && foo5(2*2,1*2,1*2,1*2)==0);

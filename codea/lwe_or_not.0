@@ -1,0 +1,5 @@
+ornot(a)=(-a) or 3;
+staticnum()=(-2) or (-3);
+notsame(a) = -a;
+same(a)=--a;
+two()=--2;

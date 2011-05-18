@@ -1,0 +1,2 @@
+extern long ortest(long );
+RET(ortest(8) == 12);

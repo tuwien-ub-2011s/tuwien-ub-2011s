@@ -1,0 +1,2 @@
+extern long sumormul(long ,long );
+RET(sumormul(1*2, 2*2) == 22);

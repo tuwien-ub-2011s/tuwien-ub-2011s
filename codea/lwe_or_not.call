@@ -1,0 +1,6 @@
+extern long ornot(long a);
+extern long notsame(long a);
+extern long same(long a);
+extern long staticnum();
+extern long two();
+RET(ornot(notsame(same(two()))) == -staticnum() + 4);

@@ -1,0 +1,2 @@
+extern long sum(long , long , long );
+RET(sum(3*2, 5*2, 10*2) == 38*2);

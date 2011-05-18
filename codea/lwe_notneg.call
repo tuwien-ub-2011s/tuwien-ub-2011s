@@ -1,0 +1,12 @@
+extern long foo(long a);
+extern long foo2(long a);
+extern long foo3(long a);
+extern long foo4(long a);
+extern long foo5(long a);
+extern long foo6(long a);
+extern long foo7(long a);
+extern long foo8(long a);
+extern long foo9(long a);
+int x = 4;
+printf("foo: %d, foo2: %d, foo3: %d, foo4: %d, foo5: %d, foo6: %d, foo7: %d, foo8: %d, foo9: %d ",foo(x), foo2(x), foo3(x), foo4(x), foo5(x), foo6(x), foo7(x), foo8(x), foo9(x) );
+RET(foo(x) == -6 && foo2(x) == 6 && foo3(x)==2 && foo4(x)==-8 && foo5(x) ==-2 && foo6(x)==2 && foo7(x) == 4 && foo8(x)==-2 && foo9(x)==8);
