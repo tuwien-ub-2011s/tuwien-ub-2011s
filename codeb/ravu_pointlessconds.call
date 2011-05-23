@@ -1,0 +1,13 @@
+extern long pointless1(long x);
+extern long pointless2(long x);
+extern long pointlessadd(long a, long b);
+extern long pointlessadd4(long a, long b, long c, long d);
+extern long pointlessadd6(long a, long b, long c, long d, long e, long f);
+RET(
+	pointless1(1234) == 1234 &&
+	pointless2(5678) == 5678 &&
+	pointless1(1122) == 1122 &&
+	pointlessadd(2, 4) == 6 &&
+	pointlessadd4(2, 4, 8, 16) == 30 &&
+	pointlessadd6(2, 4, 8, 16, 32, 64) == 126
+);
