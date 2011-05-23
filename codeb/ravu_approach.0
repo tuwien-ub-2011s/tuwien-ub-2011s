@@ -1,0 +1,6 @@
+approach(x, xtarget, xdiff) = cond
+	// x < xtarget
+	not ((x > xtarget) or (x = xtarget))	-> x + xdiff;
+	(x > xtarget)				-> x + (-xdiff);
+						-> x
+end;
