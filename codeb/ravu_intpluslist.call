@@ -1,0 +1,2 @@
+extern long intpluslist(void);
+RET(intpluslist());

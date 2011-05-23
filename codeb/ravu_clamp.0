@@ -1,0 +1,9 @@
+clamp(x, xmin, xmax) = cond
+
+	// x < xmin:
+	not ((x > xmin) or (x = xmin))	-> xmin;
+
+	x > xmax			-> xmax;
+
+					-> x
+end;

@@ -1,0 +1,2 @@
+extern long id(long a);
+RET(id(15) == 15 && id(0xFFFFFFFF) == 0xFFFFFFFF);
