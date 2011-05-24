@@ -14,13 +14,7 @@ pointlessadd(a, b) = cond
 				-> (0 . 0)
 end;
 
-pointlessadd4(a, b, c, d) = cond
-	((a . b) . (c . d)) ~ ((w . x) . (y . z))	-> (a + b + c + d);
-							-> (0 . 0)
-end;
-
-pointlessadd6(a, b, c, d, e, f) = cond
-	(a . b . ((c . d) . e) . f) ~ (u . v . ((w . x) . y) . z)
-		-> (u + v + w + x + y + z);
-		-> (0 . 0)
+pointlessadd3(a, b, c) = cond
+	((a . b) . c) ~ ((x . y) . z)	-> (x + y + z);
+					-> (0 . 0)
 end;
