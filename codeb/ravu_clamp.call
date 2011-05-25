@@ -1,2 +1,0 @@
-extern long clamp(long x, long xmin, long xmax);
-RET(clamp(12, 10, 14) == 12 && clamp(10, 12, 14) == 12 && clamp(14, 10, 12) == 12);

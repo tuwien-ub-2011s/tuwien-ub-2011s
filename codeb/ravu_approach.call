@@ -1,6 +1,0 @@
-extern long approach(long x, long xtarget, long xdiff);
-RET(
-	approach(0, 100, 10) == 10 &&
-	approach(110, 100, 10) == 100 &&
-	approach(500, 500, 10) == 500
-);
