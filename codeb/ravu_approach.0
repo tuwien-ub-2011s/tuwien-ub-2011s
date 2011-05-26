@@ -1,0 +1,5 @@
+approach(x, xtarget, xdiff) = cond
+	x > xtarget	-> x + (-xdiff);
+	x = xtarget	-> x;
+			-> x + xdiff
+end;

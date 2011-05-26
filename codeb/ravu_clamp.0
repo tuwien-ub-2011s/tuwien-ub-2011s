@@ -1,0 +1,15 @@
+clamp(x, xmin, xmax) = cond
+	x > xmax	-> xmax;
+
+	// x < xmin	-> xmin;	(operator doesn't exist)
+	// not ((x > xmin) or (x = xmin))	-> xmin		(too deep)
+
+	// effectively: (x == xmin) && (x <= xmax)
+	x = xmin	-> x;
+
+	// eff: (x > xmin) && (x <= xmax)
+	x > xmin	-> x;
+
+	// eff: (x < xmin) && (x <= xmax)
+			-> xmin
+end;
