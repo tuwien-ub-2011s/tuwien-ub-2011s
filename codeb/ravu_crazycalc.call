@@ -1,0 +1,6 @@
+extern long crazycalc(long a, long b);
+RET(
+	crazycalc(6, 10) == 48 &&
+	crazycalc(46, 84) == 2990 &&
+	crazycalc(32, 64) == 1536
+);
