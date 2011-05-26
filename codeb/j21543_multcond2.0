@@ -1,0 +1,5 @@
+func(a, b) = cond
+	(cond (a > (6 * b)) -> a.b; (a > (5 * b)) -> b.a; -> 100 end) 
+		~ e._ 	-> e + (a * b);
+	(a > (-2)) 	-> (cond a -> b; -> 200 end);
+			-> 300 end;

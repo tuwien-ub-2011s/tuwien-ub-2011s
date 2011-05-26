@@ -1,0 +1,7 @@
+extern long func(long a, long b, long c);
+RET(
+	func(8, 0, 0) == 2 &&
+	func(6, 6, 10) == -8 &&
+	func(6, 6, 12) == 10
+);
+
