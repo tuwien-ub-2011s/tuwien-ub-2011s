@@ -1,0 +1,4 @@
+extern long func(void);
+RET(
+	func() == 12;
+);

@@ -1,0 +1,10 @@
+extern long func(long n);
+RET(
+	func(-100) == 0 &&
+	func(-10) == 0 &&
+	func(0) == 0 &&
+	func(2) == 2 &&
+	func(6) == 12 &&
+	func(10) == 240 &&
+	func(20) == 7257600
+);
