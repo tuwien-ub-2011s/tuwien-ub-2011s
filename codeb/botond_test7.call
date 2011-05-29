@@ -1,0 +1,4 @@
+extern long func();
+RET(
+	func() == 20
+);
