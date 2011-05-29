@@ -1,0 +1,2 @@
+extern long mulcorner(void);
+RET(mulcorner() == 0x7FFFFFFFFFFFFFFE);

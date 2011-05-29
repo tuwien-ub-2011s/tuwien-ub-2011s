@@ -1,0 +1,20 @@
+pointless1(x) = cond
+	(1 > 2)		-> 69;
+	(3 = 5)		-> 42;
+	not (2 = 2)	-> 23;
+			-> x
+end;
+
+pointless2(x) = cond
+	-> x
+end;
+
+pointlessadd(a, b) = cond
+	(a . b) ~ (x . y)	-> (x + y);
+				-> (0 . 0)
+end;
+
+pointlessadd3(a, b, c) = cond
+	((a . b) . c) ~ ((x . y) . z)	-> (x + y + z);
+					-> (0 . 0)
+end;

@@ -1,0 +1,9 @@
+/* doiterfibo ist (als interne Funktion) absichtlich nicht dabei */
+extern long recfibo(long n);
+extern long iterfibo(long n);
+RET(
+	recfibo(20) == iterfibo(20) &&
+	recfibo(16) == 42 &&
+	iterfibo(16) == 42 &&
+	iterfibo(34) == 3194
+);

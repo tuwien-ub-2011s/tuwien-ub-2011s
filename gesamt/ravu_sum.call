@@ -1,0 +1,2 @@
+extern long summe(long a, long b);
+RET(summe(18, 44) == 62);
