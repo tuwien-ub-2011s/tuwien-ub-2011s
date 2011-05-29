@@ -1,0 +1,6 @@
+extern long func(long a, long b, long c);
+RET(
+	func(10<<1, 5<<1, 2<<1) == 204 &&
+	func(10<<1, 5<<1, (-2)<<1) == 40 &&
+	func(10<<1, 10<<1, (-1)<<1) == 44
+);

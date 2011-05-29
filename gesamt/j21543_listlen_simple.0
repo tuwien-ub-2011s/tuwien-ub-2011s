@@ -1,0 +1,5 @@
+func() = listlen(genlist());
+
+listlen(a) = cond a ~ _.b -> listlen(b) + 1; -> 1 end;
+
+genlist() = 1.2.3.4.5.6;

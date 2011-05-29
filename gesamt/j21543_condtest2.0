@@ -1,0 +1,6 @@
+func(a, b, c) = cond 
+	(a + (b * c)) -> (a * b * c) + 2;
+	(b + (-a)) -> (- (a * c));
+	-> a + b + (a * c) + 2 + helpfunc(a, b) end;
+	
+helpfunc(a, b) = a or b;
