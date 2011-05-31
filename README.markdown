@@ -20,11 +20,11 @@ wo _beispiel_ durch den entsprechenden Beispielnamen (scanner, parser, ag, codea
 
 ## Namenskonventionen
 
-Die Erweiterungen der Eingabedateien sollen jeweils eine Zahl sein, die den Exit-Code darstellt. `ravu_correct1.0` ist also korrekt, `ravu_badtoken3.1` enthält ungültige Tokens, `ravu_synerror8.2` einen Syntaxfehler, und `ravu_unknownfunc.3` einen semantischen Fehler (beispielsweise den Aufruf einer undefinierten Funktion). Natürlich kommen bei manchen Beispielen nicht alle Exit-Codes zur Geltung; das Scanner-Beispiel etwa sieht nur `0` und `1` vor.
+Die Erweiterungen der Eingabedateien sollen jeweils eine Zahl sein, die den Exit-Code darstellt. `ravu_correct1.0` ist also korrekt, `ravu_badtoken3.1` enthält ungültige Tokens, `ravu_synerror8.2` einen Syntaxfehler, und `ravu_unknownvar.3` einen semantischen Fehler (beispielsweise das Auslesen einer unbekannten Variable). Natürlich kommen bei manchen Beispielen nicht alle Exit-Codes zur Geltung; das Scanner-Beispiel etwa sieht nur `0` und `1` vor.
 
 Beim Scanner-Beispiel ist die Ausgabe noch mit einer Referenzausgabe zu vergleichen; diese soll wie die Eingabedatei heißen, nur statt `.0` die Endung `.out` besitzen (`ravu_correct1.out`).
 
-Bei den Codegen-Beispielen (`codea`, `codeb` und `gesamt`) muss für alle `.0`-Dateien auch eine entsprechende Aufrufdatei, die die Rückgabewerte überprüft, erstellt werden. Diese hat die Endung `.call`. Falls die Laufzeit-Typüberprüfung bei einem Beispiel fehlschlagen soll, soll die Codedatei statt `.0` die Endung `.xin` haben.
+Bei den Codegen-Beispielen (`codea`, `codeb` und `gesamt`) muss für alle `.0`-Dateien auch eine entsprechende Aufrufdatei, die die Rückgabewerte überprüft, erstellt werden. Diese hat die Endung `.call` (`ravu_sum.call`). Falls die Laufzeit-Typüberprüfung bei einem Beispiel fehlschlagen soll, soll die Codedatei statt `.0` die Endung `.xin` haben (`ravu_intpluslist.xin`).
 
 Damit es zu keinen Konflikten zwischen gleich benannten Dateien kommt, soll vor jede Bezeichnung im Dateinamen noch der eigene Name oder Nickname und ein Underscore hinzugefügt werden, wie auch oben in den Beispielen gezeigt.
 
