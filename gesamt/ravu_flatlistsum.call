@@ -1,0 +1,9 @@
+extern long flatlistsum(long l);
+extern long list24(void);
+extern long list55(void);
+extern long list134(void);
+RET(
+	flatlistsum(list24()) == (24 << 1) &&
+	flatlistsum(list55()) == (55 << 1) &&
+	flatlistsum(list134()) == (134 << 1)
+);
