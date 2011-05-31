@@ -1,0 +1,24 @@
+// exhaustive-search division algorithm ;-)
+idiv(dividend, divisor) = cond
+	(0 > dividend)	-> (- idiv((- dividend), divisor));
+	(0 > divisor)	-> (- idiv(dividend, (- divisor)));
+	-> diviter(dividend, divisor, 0)
+end;
+
+diviter(dividend, divisor, candidatequotient) = cond
+
+	// forceful termination
+	(0 > candidatequotient)
+		-> (0 . 0);	// invalid value
+
+	// overshot, return cq - 1 (decimal-trimmed quotient)
+	((candidatequotient * divisor) > dividend)
+		-> (candidatequotient + (-1));
+
+	// not enough
+	(dividend > (candidatequotient * divisor))
+		-> diviter(dividend, divisor, candidatequotient + 1);
+
+	// division hit precisely!
+		-> candidatequotient
+end;

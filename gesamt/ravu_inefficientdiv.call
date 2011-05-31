@@ -1,0 +1,15 @@
+extern long idiv(long dividend, long divisor);
+RET(
+	idiv((50 << 1), (5 << 1)) == (10 << 1) &&
+	idiv((11 << 1), (2 << 1)) == (5 << 1) &&
+
+	/* -4 / 2 == -2 */
+	idiv(0xFFFFFFFFFFFFFFF8, (2 << 1)) == 0xFFFFFFFFFFFFFFFC &&
+
+	/* -8 / -4 == 2 */
+	idiv(0xFFFFFFFFFFFFFFF0, 0xFFFFFFFFFFFFFFF8) == (2 << 1) &&
+
+	/* 2^8 / 2 == 2^7 */
+	/* WARNING: stack strainer */
+	idiv((1L << 8), (2 << 1)) == (1L << 7)
+);
