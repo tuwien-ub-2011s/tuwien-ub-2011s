@@ -11,13 +11,13 @@ diviter(dividend, divisor, candidatequotient) = cond
 	(0 > candidatequotient)
 		-> (0 . 0);	// invalid value
 
-	// overshot, return cq - 1 (decimal-trimmed quotient)
-	((candidatequotient * divisor) > dividend)
-		-> (candidatequotient + (-1));
-
 	// not enough
 	(dividend > (candidatequotient * divisor))
 		-> diviter(dividend, divisor, candidatequotient + 1);
+
+	// overshot, return cq - 1 (decimal-trimmed quotient)
+	((candidatequotient * divisor) > dividend)
+		-> (candidatequotient + (-1));
 
 	// division hit precisely!
 		-> candidatequotient
