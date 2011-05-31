@@ -24,6 +24,8 @@ Die Erweiterungen der Eingabedateien sollen jeweils eine Zahl sein, die den Exit
 
 Beim Scanner-Beispiel ist die Ausgabe noch mit einer Referenzausgabe zu vergleichen; diese soll wie die Eingabedatei heißen, nur statt `.0` die Endung `.out` besitzen (`ravu_correct1.out`).
 
+Bei den Codegen-Beispielen (`codea`, `codeb` und `gesamt`) muss für alle `.0`-Dateien auch eine entsprechende Aufrufdatei, die die Rückgabewerte überprüft, erstellt werden. Diese hat die Endung `.call`. Falls die Laufzeit-Typüberprüfung bei einem Beispiel fehlschlagen soll, soll die Codedatei statt `.0` die Endung `.xin` haben.
+
 Damit es zu keinen Konflikten zwischen gleich benannten Dateien kommt, soll vor jede Bezeichnung im Dateinamen noch der eigene Name oder Nickname und ein Underscore hinzugefügt werden, wie auch oben in den Beispielen gezeigt.
 
 ## beitragen
